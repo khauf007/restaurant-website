@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import CommentForm from './CommentForm';
 
   function RenderComments({comments}){
         if(comments!=null){
-            console.log(comments);
             return(
                 <div>
                     <h4><strong>Comments</strong></h4>
@@ -20,6 +20,7 @@ import { Link } from 'react-router-dom';
                             );
                         })}
                     </ul>
+                    <CommentForm />
                 </div>
             );
         }
