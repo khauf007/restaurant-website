@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Modal, ModalBody, ModalHeader, Col, Row, Label, Button} from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
-import { addComment } from '../redux/ActionCreators';
 
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length<=len);
